@@ -1,0 +1,78 @@
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, penalty=l2, random_state=None, tol=0.0001)
+mean: 0.64486, std: 0.02720, params: {'penalty': 'l1', 'C': 1}
+mean: 0.64393, std: 0.02067, params: {'penalty': 'l2', 'C': 1}
+mean: 0.64206, std: 0.00945, params: {'penalty': 'l1', 'C': 5}
+mean: 0.65607, std: 0.01592, params: {'penalty': 'l2', 'C': 5}
+mean: 0.64860, std: 0.00435, params: {'penalty': 'l1', 'C': 10}
+mean: 0.65607, std: 0.00803, params: {'penalty': 'l2', 'C': 10}
+
+
+LinearSVC(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+     intercept_scaling=1, loss=l2, multi_class=ovr, penalty=l2,
+     random_state=None, tol=0.0001, verbose=0)
+mean: 0.65047, std: 0.01700, params: {'C': 1}
+mean: 0.64579, std: 0.02185, params: {'C': 2}
+mean: 0.64579, std: 0.01773, params: {'C': 5}
+
+
+LinearSVC(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+     intercept_scaling=1, loss=l2, multi_class=ovr, penalty=l1,
+     random_state=None, tol=0.0001, verbose=0)
+mean: 0.64953, std: 0.01239, params: {'C': 1}
+mean: 0.64579, std: 0.02027, params: {'C': 2}
+mean: 0.64206, std: 0.02298, params: {'C': 5}
+
+
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss=l2, multi_class=ovr, penalty=l2,
+     random_state=None, tol=0.0001, verbose=0)
+mean: 0.65140, std: 0.01767, params: {'C': 1}
+mean: 0.64579, std: 0.02185, params: {'C': 2}
+mean: 0.64393, std: 0.01636, params: {'C': 5}
+
+
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+     intercept_scaling=1, loss=l1, multi_class=ovr, penalty=l2,
+     random_state=None, tol=0.0001, verbose=0)
+mean: 0.60935, std: 0.01282, params: {'C': 1}
+mean: 0.61495, std: 0.01012, params: {'C': 2}
+mean: 0.61589, std: 0.00676, params: {'C': 5}
+
+
+KNeighborsClassifier(algorithm=auto, leaf_size=30, metric=minkowski,
+           n_neighbors=5, p=2, weights=uniform)
+mean: 0.70280, std: 0.02025, params: {'weights': 'uniform', 'algorithm': 'ball_tree'}
+mean: 0.72804, std: 0.02706, params: {'weights': 'distance', 'algorithm': 'ball_tree'}
+mean: 0.70280, std: 0.02025, params: {'weights': 'uniform', 'algorithm': 'kd_tree'}
+mean: 0.72804, std: 0.02706, params: {'weights': 'distance', 'algorithm': 'kd_tree'}
+mean: 0.70280, std: 0.02025, params: {'weights': 'uniform', 'algorithm': 'brute'}
+mean: 0.72804, std: 0.02706, params: {'weights': 'distance', 'algorithm': 'brute'}
+
+
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0, degree=3, gamma=0.0,
+  kernel=rbf, max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)
+mean: 0.61776, std: 0.01476, params: {'kernel': 'rbf', 'C': 1.0}
+mean: 0.52243, std: 0.00791, params: {'kernel': 'poly', 'C': 1.0}
+mean: 0.40280, std: 0.00158, params: {'kernel': 'sigmoid', 'C': 1.0}
+mean: 0.67850, std: 0.01966, params: {'kernel': 'rbf', 'C': 5.0}
+mean: 0.59252, std: 0.02390, params: {'kernel': 'poly', 'C': 5.0}
+mean: 0.40280, std: 0.00158, params: {'kernel': 'sigmoid', 'C': 5.0}
+
+
+SGDClassifier(alpha=0.0001, class_weight=None, epsilon=0.1, eta0=0.0,
+       fit_intercept=True, l1_ratio=0.15, learning_rate=optimal,
+       loss=hinge, n_iter=5, n_jobs=1, penalty=l2, power_t=0.5,
+       random_state=None, rho=None, shuffle=False, verbose=0,
+       warm_start=False)
+mean: 0.50000, std: 0.07969, params: {'penalty': 'l1', 'loss': 'hinge'}
+mean: 0.54486, std: 0.07839, params: {'penalty': 'l2', 'loss': 'hinge'}
+mean: 0.53178, std: 0.05222, params: {'penalty': 'elasticnet', 'loss': 'hinge'}
+mean: 0.53458, std: 0.08997, params: {'penalty': 'l1', 'loss': 'log'}
+mean: 0.56355, std: 0.02985, params: {'penalty': 'l2', 'loss': 'log'}
+mean: 0.52336, std: 0.09412, params: {'penalty': 'elasticnet', 'loss': 'log'}
+mean: 0.52617, std: 0.06422, params: {'penalty': 'l1', 'loss': 'modified_huber'}
+mean: 0.51308, std: 0.04846, params: {'penalty': 'l2', 'loss': 'modified_huber'}
+mean: 0.56168, std: 0.04737, params: {'penalty': 'elasticnet', 'loss': 'modified_huber'}
+
